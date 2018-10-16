@@ -1,19 +1,19 @@
-#include<iostream>
+ #include<iostream>
 #include<fstream>
 #include<cstdlib>
 using namespace std;
-
-struct student{
-	int studentID[5];
-	int age[5];
-	string name[5];
-	char gender[5];
-	double score[5];
-	char grade[5];
-};
-
 int main()
 {
+		struct student{
+		string ID;
+		string Name;
+		string gender;
+		int age;
+		double score;
+		char grade;
+	}s[5];
+	
+	
 	double total_scores=0;
 	int total_age=0;
 	int count_male;
@@ -25,27 +25,24 @@ int main()
 	double my_score;
 	
 	
-	for(int i=o; i<num_students; i++)
+	for(int i=0; i<5; i++)
 	{
 		cout<<"Please enter your ID :";
-		cin>>studentID[i];
-		
+		cin>>s[i].ID;
 		cout<<"\n Enter your Name :";
-		cin>>name[i];
-		
+		cin>>s[i].Name;
 		cout<<"\n Enter your age :";
-		cin>>age[i];
-		
+		cin>>s[i].age;
 		cout<<"\n Enter your gender :";
-		cin>>gender[i];
-		
+		cin>>s[i].gender;
 		cout<<"Enter your score :";
-		cin>>score[i];
-		
-		if(score[i]>80&&score[i]<=100)
+		cin>>s[i].score;
+		if(s[i].score>80&&s[i].score<=100)
 		{
-			grade[i]="A";
+			s[i].grade='A';
 		}
-		else if(Dexoangle.score[i]="B")
-	}
+		else if(s[i].score='B')
+		
+		return 0;
+}
 }
